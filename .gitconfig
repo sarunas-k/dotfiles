@@ -1,0 +1,35 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Šarūnas K
+	email = sarunaskybartas@gmail.com
+[safe]
+	directory = /var/www
+[alias]
+	pf = push --force-with-lease
+	stasha = stash --all
+	mgabort = merge --abort
+	rbabort = rebase --abort
+	co = checkout
+	codev = checkout development
+	comain = checkout main
+	mg = merge
+	mgdev = merge development
+	mgmain = merge main
+	rb = rebase
+	rbdev = rebase development
+	rbmain = rebase main
+	cma = commit --amend
+	cm = commit -m
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
