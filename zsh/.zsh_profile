@@ -1,0 +1,11 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$HOME/.npm-global/bin:$(go env GOPATH)/bin:$PATH";
+
+# Load the shell dotfiles, and then some:
+# * ~/.zsh_path can be used to extend `$PATH`.
+# * ~/.zsh_extra can be used for other settings you don’t want to commit
+#   (e.g. ANTHROPIC_API_KEY).
+for file in ~/.zsh_{path,prompt,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;

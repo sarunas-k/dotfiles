@@ -1,0 +1,32 @@
+alias icsso='ibmcloud login --sso'
+alias iccluster='ibmcloud ks cluster config --cluster '
+alias icclusters='ibmcloud ks cluster ls'
+alias icaccount='ibmcloud target --ca'
+alias k='kubectl'
+alias ic='ibmcloud'
+alias kd='kubectl describe '
+alias kg='kubectl get '
+alias ke='kubectl edit '
+alias kaf='kubectl apply -f '
+alias kak='kubectl apply -k '
+alias kcontexts='kubectl config get-contexts'
+alias kcontext='kubectl config use-context '
+alias kgns='kubectl get ns'
+alias kgp='kubectl get pod '
+alias kgd='kubectl get deployment '
+alias kgs='kubectl get service '
+alias kns='kubectl config set-context --current --namespace'
+alias kpf='kubectl port-forward'
+alias kcurrent='kubectl config current-context'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias cat="bat --paging=never --style=plain"
+alias ls="eza --group-directories-first"
+alias lst="eza --group-directories-first --tree"
+alias docker='podman'
+
+alias tf="terraform"
