@@ -1,11 +1,11 @@
 # dotfiles
 
-Linux dotfiles, split into packages that mirror `$HOME`:
+Dotfiles split into packages that mirror `$HOME`
 
 | Package | Contents |
 | :--- | :--- |
-| `bash/` | `.bashrc`, `.bash_profile`, `.bash_prompt`, `.bash_logout` |
-| `zsh/` | `.zshrc`, `.zsh_profile`, `.zsh_prompt`, `.zsh_aliases` |
+| `bash/` | `.bashrc`, `.bash_profile`, `.bash_prompt`, `.bash_logout` (Linux) |
+| `zsh/` | `.zshrc`, `.zprofile`, `.zsh_profile`, `.zsh_prompt`, `.zsh_aliases` (macOS) |
 | `shell/` | `.aliases` |
 | `git/` | `.gitconfig` |
 | `config/` | `.config/gh/` |
@@ -14,7 +14,7 @@ Install by symlinking the packages you want:
 
 ```bash
 ./install.sh bash shell git config # bash setup
-./install.sh zsh git config          # zsh setup
+./install.sh zsh git config        # zsh setup
 ```
 
-Existing files are never overwritten: they are moved to `<name>.bak` (or `<name>.bak.1`, `.bak.2`, ... if a backup already exists) before the symlink is created. Files that are already linked correctly are skipped, so the script is safe to re-run.
+Existing files are never overwritten: they are moved to `<name>.bak` before the symlink is created. Script is safe to re-run.
